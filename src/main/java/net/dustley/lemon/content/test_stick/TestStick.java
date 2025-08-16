@@ -46,7 +46,7 @@ public class TestStick extends DebugStickItem {
 
                 physics.addConstraint(entities[x][y], new GravityConstraint(new Vector3d(0.0,-1,0.0)));
 //                physics.addParticleCollider(entities[x][y], new SphereCollider(scale * 0.5));
-                physics.addEntityCollider(entities[x][y], new SphereCollider(scale * 0.5));
+                physics.addWorldCollider(entities[x][y], new SphereCollider(scale * 0.5));
             }
         }
 
